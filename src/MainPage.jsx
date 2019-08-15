@@ -26,7 +26,10 @@ export default function MainPage() {
       </Nav>
       <Col style={{ textAlign: "center" }}>
         <Row style={{ textAlign: "center", paddingLeft: "42%" }}>
-          <a href="https://www.google.com" style={{ textDecoration: "none" }}>
+          <a
+            href="https://wikwiksearchengine.herokuapp.com"
+            style={{ textDecoration: "none" }}
+          >
             <h1
               style={{
                 fontSize: 70,
@@ -44,7 +47,7 @@ export default function MainPage() {
             <Form.Control
               size="lg"
               type="text"
-              placeholder="Search anything !"
+              placeholder="Cari Skuy !"
               style={{
                 width: "50%",
                 border: "2px solid black",
@@ -66,10 +69,15 @@ export default function MainPage() {
             }}
             block
           >
-            Search !
+            Kuy !
           </Button>
         </center>
       </Col>
+      <footer>
+        <p style={{ color: "#bbbbbb", marginLeft: "10%" }}>
+          By Mocchapine | Rayhan Hamada
+        </p>
+      </footer>
     </div>
   );
 }

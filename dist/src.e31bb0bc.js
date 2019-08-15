@@ -47475,7 +47475,7 @@ function MainPage() {
       paddingLeft: "42%"
     }
   }, _react.default.createElement("a", {
-    href: "https://www.google.com",
+    href: "https://wikwiksearchengine.herokuapp.com",
     style: {
       textDecoration: "none"
     }
@@ -47497,7 +47497,7 @@ function MainPage() {
   }, _react.default.createElement("center", null, _react.default.createElement(_reactBootstrap.Form.Control, {
     size: "lg",
     type: "text",
-    placeholder: "Search anything !",
+    placeholder: "Cari Skuy !",
     style: {
       width: "50%",
       border: "2px solid black",
@@ -47515,7 +47515,12 @@ function MainPage() {
       window.location.href = "https://www.google.com/search?q=".concat(queries);
     },
     block: true
-  }, "Search !"))));
+  }, "Kuy !"))), _react.default.createElement("footer", null, _react.default.createElement("p", {
+    style: {
+      color: "#bbbbbb",
+      marginLeft: "10%"
+    }
+  }, "By Mocchapine | Rayhan Hamada")));
 }
 },{"react":"../node_modules/react/index.js","./MainPage.css":"MainPage.css","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css"}],"App.js":[function(require,module,exports) {
 "use strict";
@@ -47581,7 +47586,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63517" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64142" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
