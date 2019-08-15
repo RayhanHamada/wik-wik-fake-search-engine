@@ -77,6 +77,13 @@ export default function MainPage() {
         <p style={{ color: "#bbbbbb", marginLeft: "10%" }}>
           By Mocchapine | Rayhan Hamada
         </p>
+        <i
+          class="fab fa-github fa-2x"
+          onClick={() =>
+            (window.location.href = "https://github.com/RayhanHamada/wik-wik-search-engine")
+          }
+          style={{ marginLeft: "10%" }}
+        />
       </footer>
     </div>
   );

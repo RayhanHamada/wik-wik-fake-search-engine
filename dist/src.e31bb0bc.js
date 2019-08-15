@@ -47520,7 +47520,15 @@ function MainPage() {
       color: "#bbbbbb",
       marginLeft: "10%"
     }
-  }, "By Mocchapine | Rayhan Hamada")));
+  }, "By Mocchapine | Rayhan Hamada"), _react.default.createElement("i", {
+    class: "fab fa-github fa-2x",
+    onClick: function onClick() {
+      return window.location.href = "https://github.com/RayhanHamada/wik-wik-search-engine";
+    },
+    style: {
+      marginLeft: "10%"
+    }
+  })));
 }
 },{"react":"../node_modules/react/index.js","./MainPage.css":"MainPage.css","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css"}],"App.js":[function(require,module,exports) {
 "use strict";
@@ -47586,7 +47594,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64350" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64611" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
