@@ -12,6 +12,7 @@ import {
 import "bootstrap/dist/css/bootstrap.css";
 
 export default function MainPage() {
+
   return (
     <div>
       <Nav
@@ -42,7 +43,6 @@ export default function MainPage() {
           </a>
           <p style={{ color: "orangered", fontSize: 20 }}>Search Engine</p>
         </Row>
-        <Form style={{ marginTop: "1%" }}>
           <center>
             <Form.Control
               size="lg"
@@ -51,12 +51,12 @@ export default function MainPage() {
               style={{
                 width: "50%",
                 border: "2px solid black",
-                textAlign: "center"
+                textAlign: "center",
+                marginTop: "1%"
               }}
               id="search"
             />
           </center>
-        </Form>
         <center>
           <Button
             variant="outline-secondary"
@@ -67,6 +67,7 @@ export default function MainPage() {
                 .replace(" ", "+");
               window.location.href = `https://www.google.com/search?q=${queries}`;
             }}
+            id="buttonE"
             block
           >
             Kuy !

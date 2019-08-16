@@ -30676,12 +30676,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"MainPage.css":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"MainPage.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -47490,21 +47485,18 @@ function MainPage() {
       color: "orangered",
       fontSize: 20
     }
-  }, "Search Engine")), _react.default.createElement(_reactBootstrap.Form, {
-    style: {
-      marginTop: "1%"
-    }
-  }, _react.default.createElement("center", null, _react.default.createElement(_reactBootstrap.Form.Control, {
+  }, "Search Engine")), _react.default.createElement("center", null, _react.default.createElement(_reactBootstrap.Form.Control, {
     size: "lg",
     type: "text",
     placeholder: "Cari Skuy !",
     style: {
       width: "50%",
       border: "2px solid black",
-      textAlign: "center"
+      textAlign: "center",
+      marginTop: "1%"
     },
     id: "search"
-  }))), _react.default.createElement("center", null, _react.default.createElement(_reactBootstrap.Button, {
+  })), _react.default.createElement("center", null, _react.default.createElement(_reactBootstrap.Button, {
     variant: "outline-secondary",
     style: {
       marginTop: "1%",
@@ -47514,6 +47506,7 @@ function MainPage() {
       var queries = $("#search").val().replace(" ", "+");
       window.location.href = "https://www.google.com/search?q=".concat(queries);
     },
+    id: "buttonE",
     block: true
   }, "Kuy !"))), _react.default.createElement("footer", null, _react.default.createElement("p", {
     style: {
@@ -47557,8 +47550,6 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactDom = _interopRequireDefault(require("react-dom"));
 
-require("./styles.css");
-
 var _App = _interopRequireDefault(require("./App.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -47566,7 +47557,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var mountNode = document.getElementById("app");
 
 _reactDom.default.render(_react.default.createElement(_App.default, null), mountNode);
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./styles.css":"styles.css","./App.js":"App.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./App.js":"App.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -47594,7 +47585,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64611" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64681" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
