@@ -47449,59 +47449,32 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function MainPage() {
   return _react.default.createElement("div", null, _react.default.createElement(_reactBootstrap.Nav, {
     className: "justify-content-end",
-    style: {
-      backgroundColor: "white",
-      marginBottom: "13%"
-    }
+    id: "mainNav"
   }, ["Wmail", "Images", "More"].map(function (val) {
     return _react.default.createElement(_reactBootstrap.Nav.Link, {
-      style: {
-        color: "#454545",
-        marginLeft: "20px"
-      }
+      className: "mainNavLink"
     }, val);
   })), _react.default.createElement(_reactBootstrap.Col, {
-    style: {
-      textAlign: "center"
-    }
+    id: "mainCol"
   }, _react.default.createElement(_reactBootstrap.Row, {
-    style: {
-      textAlign: "center",
-      paddingLeft: "42%"
-    }
+    id: "mainRow"
   }, _react.default.createElement("a", {
-    href: "https://wikwiksearchengine.herokuapp.com",
-    style: {
-      textDecoration: "none"
-    }
+    id: "linkToWikWik",
+    href: "https://wikwiksearchengine.herokuapp.com"
   }, _react.default.createElement("h1", {
+    id: "wikWikH1",
     style: {
-      fontSize: 70,
-      boxShadow: "0 8px 6px -6px black",
-      color: "black"
+      fontSize: 70
     }
   }, "Wik Wik")), _react.default.createElement("p", {
-    style: {
-      color: "orangered",
-      fontSize: 20
-    }
+    id: "SEpar"
   }, "Search Engine")), _react.default.createElement("center", null, _react.default.createElement(_reactBootstrap.Form.Control, {
     size: "lg",
     type: "text",
     placeholder: "Cari Skuy !",
-    style: {
-      width: "50%",
-      border: "2px solid black",
-      textAlign: "center",
-      marginTop: "1%"
-    },
     id: "search"
   })), _react.default.createElement("center", null, _react.default.createElement(_reactBootstrap.Button, {
     variant: "outline-secondary",
-    style: {
-      marginTop: "1%",
-      width: "25%"
-    },
     onClick: function onClick() {
       var queries = $("#search").val().replace(" ", "+");
       window.location.href = "https://www.google.com/search?q=".concat(queries);
@@ -47509,17 +47482,12 @@ function MainPage() {
     id: "buttonE",
     block: true
   }, "Kuy !"))), _react.default.createElement("footer", null, _react.default.createElement("p", {
-    style: {
-      color: "#bbbbbb",
-      marginLeft: "10%"
-    }
+    id: "parAuthor"
   }, "By Mocchapine | Rayhan Hamada"), _react.default.createElement("i", {
     class: "fab fa-github fa-2x",
+    id: "gitIcon",
     onClick: function onClick() {
       return window.location.href = "https://github.com/RayhanHamada/wik-wik-search-engine";
-    },
-    style: {
-      marginLeft: "10%"
     }
   })));
 }
@@ -47585,7 +47553,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64681" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65164" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

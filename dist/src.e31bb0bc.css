@@ -1,9 +1,72 @@
-html, body
-{
-    height: 100%;
-    width: 100%;
-    background-color: #E4E4E4;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #e4e4e4;
 }
+
+#mainNav {
+  background-color: white;
+  margin: 0% 0% 13% 0%;
+}
+
+.mainNavLink {
+  color: #454545;
+  margin: 0px 0px 0px 20px;
+}
+
+#mainCol,
+#mainRow {
+  text-align: center;
+}
+
+#mainRow {
+  padding: 0% 0% 0% 41%;
+}
+
+#wikWikH1 {
+  font-size: 80;
+  box-shadow: 0px 8px 6px -6px black;
+  color: black;
+}
+
+#linkToWikWik {
+  text-decoration: none;
+}
+
+#SEpar {
+  color: orangered;
+  font-size: 20;
+}
+
+#search {
+  width: 50%;
+  border: 2px solid black;
+  text-align: center;
+}
+
+#search {
+  margin: 1% 0% 0% 0%;
+}
+
+#buttonE {
+  width: 25%;
+  margin: 1% 1% 0% 0%;
+}
+
+#parAuthor {
+  color: #bbbbbb;
+  margin: 0% 0% 0% 10%;
+}
+
+#gitIcon {
+  margin: 0% 0% 0% 10%;
+}
+
+footer {
+  margin: 10% 0% 0% 0%;
+}
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
